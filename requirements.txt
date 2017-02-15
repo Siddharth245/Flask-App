@@ -28,7 +28,7 @@ oauth==1.0.1
 oauth2client==4.0.0
 pyasn1==0.1.9
 pyasn1-modules==0.0.8
-PyBluez==0.18
+PyBluez==0.22
 pycparser==2.14
 pycrypto==2.6.1
 pygobject==3.20.0
