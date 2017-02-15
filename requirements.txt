@@ -16,7 +16,7 @@ ipaddress==1.0.17
 itsdangerous==0.24
 Jinja2==2.8
 keyring==7.3
-kiwi==9.1.0
+
 launchpadlib==1.10.3
 lazr.restfulclient==0.13.1
 lazr.uri==1.0.3
