@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="hero-section">
+    <div class="container">
+	<p>&nbsp</p>
+<div style="overflow:auto">
+	{% for image,caption in images_captions%}<div width=200px style="float:left">
+	<table float="left">
+		<tr><td>	
+  		<img src="{{url_for('uploaded_file',filename=image)}}" float="left" height=200px width=200px/>
+		</td></tr><tr><td align="center"><span>&nbsp{{caption}}</span></td></tr></table></div>
+	{% endfor %}
+</div>
+<div style="float:top" align="center">
+<a href="{{url_for('previewprev')}}" class="btn-primary">Prev</a>
+<a href="{{url_for('home')}}" class="btn-secondary">Back</a>
+<a href="{{url_for('previewnext')}}" class="btn-primary">Next</a>
+</div>
+</div>
+
+  </main>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <main class="hero-section">
+    <div class="container">
+      <p>&nbsp;</p>
+      <h1>Home</h1><a href="/logout">Logout</a>
+	<p>To upload your images click the button below:</p>
+	<form method="POST" enctype=multipart/form-data action="/home">
+	{{form.hidden_tag()}}
+	{{form.caption.label}}
+	{{form.caption}}<br>
+	<br>
+	{{form.photo}}
+	 {{ form.submit(class="btn-secondary") }}
+	</form>
+         <!--<input type=file name=file>
+         <input type=submit value=Upload class="btn-secondary">-->
+	<br><br>
+	 <a href="{{url_for('preview')}}" class="btn-primary">Preview</a>	
+		
+	
+
+    </div>
+  </main>
+{% endblock %}
